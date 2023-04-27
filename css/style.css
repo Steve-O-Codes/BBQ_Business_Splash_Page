@@ -1,0 +1,168 @@
+/* CSS resets */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.3125rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+}
+
+.form-disclaimer {
+  font-size: 0.625rem;
+}
+
+strong {
+  font-weight: 900;
+}
+
+/* generic styles */
+
+/* main section */
+
+main {
+  /*  flex properties */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  /* background image */
+  background-image: url(../images/ribs.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #404040;
+  background-blend-mode: multiply;
+  min-height: 50vh;
+  color: #fff;
+  padding: 0 1em 1.5em;
+}
+
+.banner-text {
+  order: -1;
+  color: #f18119;
+  border-top: 5px solid #f18119;
+  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+  max-width: 290px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.main-sub-heading {
+  color: #f18119;
+  text-transform: uppercase;
+}
+
+/* form section */
+
+section {
+  min-height: 50vh;
+  padding: 1.75em;
+}
+
+.form-heading {
+  color: #404040;
+  margin-bottom: 0.2em;
+}
+
+.form-sub-heading {
+  color: #f18119;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+
+.form-info {
+  margin-bottom: 2em;
+  line-height: 1.5;
+}
+
+input {
+  display: block;
+  margin: 1em auto 1em;
+}
+
+input,
+button {
+  max-width: 350px;
+  width: 60%;
+  border-radius: 5px;
+  padding: 0.75em 1em;
+}
+
+button {
+  background-image: linear-gradient(to left, #ff713b, #ffa51d);
+  border: none;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  transform: scale(1);
+  transition: transform 300ms;
+  display: block;
+  margin: 1em auto 1em;
+}
+
+button:hover,
+button:focus {
+  transform: scale(1.15);
+}
+
+.form-disclaimer {
+  margin-top: 1.25em;
+}
+
+/* media queries */
+
+@media (min-width: 1100px) {
+  .flex-container {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  main {
+    width: 50%;
+  }
+
+  .main-sub-heading {
+    justify-self: center;
+    margin-bottom: 10em;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .section-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
