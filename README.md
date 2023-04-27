@@ -1,7 +1,8 @@
-<header>
+<head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-</header>
+</head>
 
+<body>
 # BBQ_Business_Splash_Page
 <hr>
 
@@ -15,3 +16,4 @@ https://master--quiet-alpaca-661f86.netlify.app/
 ### Technologies Used:
 - <i class="devicon-html5-plain-wordmark colored"></i>
 - <i class="devicon-css3-plain-wordmark colored"></i>
+</body>
